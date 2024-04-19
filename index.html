@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Images/app-development.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body class="light-theme">
+    <div class="container">
+      <div class="header">
+        <div class="left_section">
+          <h1>Social Media Dashboard</h1>
+          <span>Total Followers: 23,004</span>
+        </div>
+        <div class="right_section">
+          <span>Dark Mode</span>
+          <div class="toggle" id="toggle"><div class="circle right" id="circle"></div></div>
+        </div>
+      </div>
+      <div class="Social_cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:grid-cols-4 pt-[5.5rem]">
+        <div class="card borderfacebook">
+          <div class="social_user">
+            <i class="fa-brands fa-facebook faceicon"></i>
+            <span>@nathanf</span>
+          </div>
+          <div class="details">
+            <div class="number">1987</div>
+            <div class="followers">Followers</div>
+          </div>
+          <div class="change">
+            <i class="fa-solid fa-up-long"></i>
+            12 Today
+          </div>
+        </div>
+        <div class="card bordertwitter">
+          <div class="social_user">
+            <i class="fa-brands fa-twitter twitticon"></i>
+            <span>@nathanf</span>
+          </div>
+          <div class="details">
+            <div class="number">1044</div>
+            <div class="followers">Followers</div>
+          </div>
+          <div class="change">
+            <i class="fa-solid fa-up-long"></i>
+            99 Today 
+          </div>
+        </div>
+        <div class="card instacard borderinstagram">
+          <div class="social_user">
+            <img src="./images/icon-instagram.svg" alt="">
+            <span>@nathanf</span>
+          </div>
+          <div class="details">
+            <div class="number">11K</div>
+            <div class="followers">Followers</div>
+          </div>
+          <div class="change">
+            <i class="fa-solid fa-up-long"></i>
+            1099 Today
+          </div>
+        </div>
+        <div class="card borderyoutube">
+          <div class="social_user">
+            <i class="fa-brands fa-youtube youtubicon"></i>
+            <span>@nathanf</span>
+          </div>
+          <div class="details">
+            <div class="number">8239</div>
+            <div class="followers">Followers</div>
+          </div>
+          <div class="change">
+            <i class="fa-solid fa-up-long"></i>
+            144 Today
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="top_section">
+          <h2>Overview - Today</h2>
+        </div>
+        <div class="bottom_section">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:grid-cols-4">
+            <div class="card borderfacebook">
+              <div class="icon">
+                <span>page views</span>
+                <!-- <i class="fa-brands fa-facebook faceicon"></i> -->
+                <img src="./images/icon-facebook.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">87</div>
+                <div class="change">
+                  <i class="fa-solid fa-up-long"></i>
+                  3%
+                </div>
+              </div>
+            </div>
+            <div class="card borderfacebook">
+              <div class="icon">
+                <span>page Likes</span>
+                <!-- <i class="fa-brands fa-facebook faceicon"></i> -->
+                <img src="./images/icon-facebook.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">52</div>
+                <div class="change down">
+                  <i class="fa-solid fa-arrow-down down"></i>
+                  2%
+                </div>
+              </div>
+            </div>
+            <div class="card instacard">
+              <div class="icon">
+                <span>Likes</span>
+                <img src="./images/icon-instagram.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">5462</div>
+                <div class="change">
+                  <i class="fa-solid fa-up-long"></i>
+                  2257%
+                </div>
+              </div>
+            </div>
+            <div class="card instacard">
+              <div class="icon">
+                <span>profile views</span>
+                <img src="./images/icon-instagram.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">52k</div>
+                <div class="change">
+                  <i class="fa-solid fa-up-long"></i>
+                  1375%
+                </div>
+              </div>
+            </div>
+            <div class="card bordertwitter">
+              <div class="icon">
+                <span>retweets</span>
+                <img src="./images/icon-twitter.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">117</div>
+                <div class="change">
+                  <i class="fa-solid fa-up-long"></i>
+                  303%
+                </div>
+              </div>
+            </div>
+            <div class="card bordertwitter">
+              <div class="icon">
+                <span>likes</span>
+                <!-- <i class="fa-brands fa-twitter twitticon"></i> -->
+                <img src="./images/icon-twitter.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">507</div>
+                <div class="change">
+                  <i class="fa-solid fa-up-long"></i>
+                  553%
+                </div>
+              </div>
+            </div>
+            <div class="card borderyoutube">
+              <div class="icon">
+                <span>likes</span>
+                <!-- <i class="fa-brands fa-youtube youtubicon"></i> -->
+                <img src="./images/icon-youtube.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">107</div>
+                <div class="change down">
+                  <i class="fa-solid fa-arrow-down down"></i>
+                  19%
+                </div>
+              </div>
+            </div>
+            <div class="card borderyoutube">
+              <div class="icon">
+                <span>total views</span>
+                <!-- <i class="fa-brands fa-youtube youtubicon"></i> -->
+                <img src="./images/icon-youtube.svg" alt="">
+              </div>
+              <div class="details_change">
+                <div class="number">1407</div>
+                <div class="change down">
+                  <i class="fa-solid fa-arrow-down down"></i>
+                  12%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

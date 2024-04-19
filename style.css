@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --youtube: hsl(348, 97%, 39%);
+    --toggle--dark-theme: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --very-dark-blue: hsl(230, 17%, 14%);
+    --dark-grayish-blue: hsl(228, 28%, 20%);
+    --grayish-blue: hsl(228, 34%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --Toggle-light-theme: hsl(230, 22%, 74%)
+}
+.light-theme{
+    --very-dark-blue: hsl(230, 17%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 44%);
+    --light-grayish-blue: hsl(227, 47%, 96%);
+    --col_primary: hsl(0, 0%, 0%);
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    .circle{
+        position: absolute;
+        left: 42px !important;
+    }
+}
+.dark-theme{
+    --very-dark-blue: hsl(230, 17%, 14%);
+    --dark-grayish-blue: hsl(228, 28%, 20%);
+    --light-grayish-blue: hsl(228, 34%, 66%);
+    --col_primary: hsl(0, 0%, 100%);
+    --Very-Pale-Blue: hsl(228, 28%, 20%);
+    --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+    --Desaturated-Blue-Text: hsl(228, 34%, 66%);
+    --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+    .circle{
+        position: absolute;
+        left: 4px !important;
+    }
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Very-Pale-Blue);
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+.left_section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.right_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.right_section span{
+    color: var(--grayish-blue);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.left_section h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--col_primary);
+}
+.left_section span{ 
+    color: var(--grayish-blue);
+    font-size: 12px;
+}
+.toggle{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid var(--grayish-blue);
+    position: relative;
+    background: linear-gradient(var(--toggle--dark-theme), var(--Toggle-light-theme));
+}
+.circle{
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    background-color: var(--col_primary);
+    border-radius: 50%;
+    /* margin-left: 35px; */
+    top: 4px;
+    left: 4px;
+}
+.card{
+    background-color: var(--Dark-Desaturated-Blue-Card-BG);
+    box-shadow: 0 0 10px var(--grayish-blue);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: fit-content;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--grayish-blue);
+    background-color: var(--Very-Dark-Blue-BG);
+}
+.social_user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social_user i{
+    font-size: 18px;
+}
+.social_user img{
+    width: 30px;
+    height: 30px;
+}
+.social_user span{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--col_primary);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.number{
+    font-size: 4rem;
+    color: var(--col_primary);
+    position: relative;
+    top: 8px;
+}
+.followers{
+    font-size: 15px;
+    color: var(--grayish-blue);
+    letter-spacing: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+}
+.change{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--lime-green);
+    margin-top: 10px;
+}
+.change i{
+    color: var(--lime-green);
+}
+.borderfacebook {
+    border-top: 4px solid var(--facebook);
+}
+.faceicon{
+    color: var(--facebook);
+}
+.instaicon{
+    color: var(--instagram);
+}
+.bordertwitter{
+    border-top: 4px solid var(--twitter);
+}
+.borderyoutube{
+    border-top: 4px solid var(--youtube);
+}
+.borderlinkedin{
+    border-top: 4px solid var(--linkedin);
+}
+.twitticon{
+    color: var(--twitter);
+}
+.youtubicon{
+    color: var(--youtube);
+}
+.linkedinicon{
+    color: var(--linkedin);
+}
+.instacard{
+    background-color: transparent;
+    position: relative;
+}
+.instacard::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--instagram);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.bottom_section{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 50px;
+    gap: 30px;
+}
+.section2 .top_section h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--col_primary);
+}
+.icon , .details_change{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.icon span{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--col_primary);
+}
+.icon i{
+    font-size: 1.5rem;
+}
+.icon img{
+    width: 24px;
+    height: 24px;
+}
+.details_change .number{
+    font-size: 2rem;
+    color: var(--col_primary);
+}
+.details_change .change{
+    color: var(--lime-green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    position: relative;
+    top: 5px;
+}
+.up{
+    color: var(--lime-green) !important;
+}
+.down{
+    color: var(--bright-red) !important;
+}
+@media (max-width: 768px) {
+    .card{
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .left_section{
+        padding-bottom: 20px;
+    }
+    .right_section{
+        justify-content: space-between;
+        /* margin-top: 20px; */
+        width: 100%;
+        border-top: 1px solid var(--grayish-blue);
+        padding-top:20px ;
+    }
+}
